@@ -1,0 +1,8 @@
+<h2>New Author</h2>
+<%= form_tag authors_path, method: :post do %>
+
+  <%= label_tag :name %>
+  <%= text_field_tag :name, @author.name %>
+
+  <%= submit_tag 'Create Author' %>
+<% end %>

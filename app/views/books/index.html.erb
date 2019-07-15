@@ -1,0 +1,10 @@
+<h1>Books Available</h1>
+
+<% @books.each do |book| %>
+  <section id='book-<%= book.id%>'>
+    <li><h2><%= link_to book.title, book_path(book) %></h2></li>
+    <p>Page count: <%= book.pages %></p>
+    <p>Published: <%= book.publication_year %></p>
+    <p>Written by: <%= link_to book.author.name, author_path(book.author) %></p>
+  </section>
+<% end %>

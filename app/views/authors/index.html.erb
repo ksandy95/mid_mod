@@ -1,0 +1,7 @@
+<h2>Authors</h2>
+
+  <% @authors.each do |author| %>
+    <section id='author-<%= author.id %>'>
+      <li><h2><%= link_to author.name, author_path(author) %></h2></li>
+    </section>
+  <% end %>

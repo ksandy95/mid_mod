@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Author</title>
+</head>
+<body>
+
+    <h1><%= @author.name %></h1>
+    <h2><%= link_to 'New Book', "/authors/#{@author.id}/books/new", method: :get %></h2>
+
+</body>
